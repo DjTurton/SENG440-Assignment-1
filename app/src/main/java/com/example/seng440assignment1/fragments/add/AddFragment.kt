@@ -36,7 +36,6 @@ class AddFragment : Fragment() {
 
         view.submit_button.setOnClickListener {
             insertDataToDatabase()
-
         }
 
         return view
@@ -56,11 +55,12 @@ class AddFragment : Fragment() {
             val date = fromDate(Date())
 
             val entry = RatingEntry(0, date, rating, tags)
+            mRatingEntryViewModel.addEntry(entry)
             Toast.makeText(activity, "Successfully added an entry!", Toast.LENGTH_LONG).show()
             println(entry)
             println(toDate(entry.date))
 
-            findNavController().navigate(R.id.action_addFragment_to_listFragment)
+            findNavController().navigate(R.id.action_addFragment_to_viewFragment)
         }
 
     }

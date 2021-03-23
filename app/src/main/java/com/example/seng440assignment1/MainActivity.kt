@@ -12,4 +12,9 @@ class MainActivity : AppCompatActivity() {
 
         setupActionBarWithNavController(findNavController(R.id.fragment2))
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.fragment2)
+        return super.onSupportNavigateUp()
+    }
 }
