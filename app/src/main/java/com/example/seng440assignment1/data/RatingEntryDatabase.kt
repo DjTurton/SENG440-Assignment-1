@@ -1,11 +1,11 @@
 package com.example.seng440assignment1.data
 
 import android.content.Context
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
+import androidx.room.*
+import java.util.*
 
 @Database(entities = [RatingEntry::class], version = 1, exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class RatingEntryDatabase: RoomDatabase() {
 
     abstract fun ratingEntryDao(): RatingEntryDao
@@ -29,5 +29,15 @@ abstract class RatingEntryDatabase: RoomDatabase() {
                 return instance
             }
         }
+    }
+
+    @TypeConverter
+    fun fromTimestamp(value: Long?): Date? {
+        return value?.let { Date(it) }
+    }
+
+    @TypeConverter
+    fun dateToTimestamp(date: Date?): Long? {
+        return date?.time?.toLong()
     }
 }

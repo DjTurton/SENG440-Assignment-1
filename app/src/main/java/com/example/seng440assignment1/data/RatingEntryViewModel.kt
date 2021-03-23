@@ -8,7 +8,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class RatingEntryViewModel(application: Application): AndroidViewModel(application) {
-    private val readAllData: LiveData<List<RatingEntry>>
+    val readAllData: LiveData<List<RatingEntry>>
     private val repository: RatingEntryRepository
 
     init {

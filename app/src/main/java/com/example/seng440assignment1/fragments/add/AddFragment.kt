@@ -1,8 +1,7 @@
 package com.example.seng440assignment1.fragments.add
 
 
-import DateConverter.fromDate
-import DateConverter.toDate
+
 import android.os.Bundle
 import android.text.TextUtils
 import androidx.fragment.app.Fragment
@@ -52,13 +51,12 @@ class AddFragment : Fragment() {
         {
             Toast.makeText(activity, "Please enter at least one tag!", Toast.LENGTH_LONG).show()
         } else {
-            val date = fromDate(Date())
+            val date = Date()
 
             val entry = RatingEntry(0, date, rating, tags)
             mRatingEntryViewModel.addEntry(entry)
             Toast.makeText(activity, "Successfully added an entry!", Toast.LENGTH_LONG).show()
             println(entry)
-            println(toDate(entry.date))
 
             findNavController().navigate(R.id.action_addFragment_to_viewFragment)
         }
