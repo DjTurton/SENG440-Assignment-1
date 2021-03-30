@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_listFragment_to_viewFragment"
             app:destination="@id/viewFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_graphFragment"
+            app:destination="@id/graphFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
@@ -37,5 +40,13 @@
         <action
             android:id="@+id/action_viewFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_viewFragment_to_graphFragment"
+            app:destination="@id/graphFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.example.seng440assignment1.GraphFragment"
+        android:label="fragment_graph"
+        tools:layout="@layout/fragment_graph" />
 </navigation>

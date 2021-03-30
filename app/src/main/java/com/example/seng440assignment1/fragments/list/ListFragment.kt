@@ -27,6 +27,10 @@ class ListFragment : Fragment() {
             findNavController().navigate(R.id.action_listFragment_to_viewFragment)
         }
 
+        view.graphButton.setOnClickListener {
+            findNavController().navigate(R.id.action_listFragment_to_graphFragment)
+        }
+
         return view
     }
 }
