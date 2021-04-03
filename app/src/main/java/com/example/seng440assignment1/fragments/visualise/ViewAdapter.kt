@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.seng440assignment1.R
 import com.example.seng440assignment1.data.RatingEntry
 import kotlinx.android.synthetic.main.custom_row.view.*
+import java.text.SimpleDateFormat
 
 class ViewAdapter: RecyclerView.Adapter<ViewAdapter.MyViewHolder>() {
 
@@ -23,7 +24,9 @@ class ViewAdapter: RecyclerView.Adapter<ViewAdapter.MyViewHolder>() {
         println("this is happening")
         val currentItem = entryList[position]
         holder.itemView.row_id.text = currentItem.id.toString()
-        holder.itemView.row_date.text = currentItem.date.toString()
+        val formatter = SimpleDateFormat("dd/MM/yy")
+
+        holder.itemView.row_date.text = formatter.format(currentItem.date)
         holder.itemView.row_rating.text = currentItem.rating.toString()
         holder.itemView.row_tags.text = currentItem.tags
     }

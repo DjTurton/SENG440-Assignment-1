@@ -34,7 +34,7 @@
         android:id="@+id/graphButton"
         android:layout_width="246dp"
         android:layout_height="55dp"
-        android:text="View Results"
+        android:text="Graph Results"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
