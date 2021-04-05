@@ -47,6 +47,6 @@
     <fragment
         android:id="@+id/graphFragment"
         android:name="com.example.seng440assignment1.GraphFragment"
-        android:label="fragment_graph"
+        android:label="Results Graph"
         tools:layout="@layout/fragment_graph" />
 </navigation>
