@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SENG440 Assignment 1</string>
+    <string name="hello_blank_fragment">"虚 "</string>
+    <string name="submit">申し出る</string>
+    <string name="type_here">ここに入力</string>
+    <string name="rate_your_day_between_0_and_10">1から100の間のレート</string>
+    <string name="_15_04_2000">15/04/2000</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="bad_sad_mad">"悪い , 悲しい, 狂った "</string>
+    <string name="log_day">"ログ日 "</string>
+    <string name="view_results">"結果を見る "</string>
+    <string name="graph_results">"結果をグラフ化する "</string>
+    <string name="health_visualiser">"ヘルスビジュアライザー "</string>
+</resources>
