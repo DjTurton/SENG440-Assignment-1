@@ -7,6 +7,18 @@
     tools:context=".fragments.list.ListFragment">
 
     <Button
+        android:id="@+id/emailButton"
+        android:layout_width="246dp"
+        android:layout_height="55dp"
+        android:text="@string/set_a_reminder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewButton"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <Button
         android:id="@+id/logButton"
         android:layout_width="157dp"
         android:layout_height="106dp"
@@ -47,7 +59,7 @@
         android:layout_width="244dp"
         android:layout_height="91dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:text="@string/health_visualiser"
         android:textAlignment="center"

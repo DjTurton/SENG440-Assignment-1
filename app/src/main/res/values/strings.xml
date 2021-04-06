@@ -13,4 +13,5 @@
     <string name="view_results">View Results</string>
     <string name="graph_results">Graph Results</string>
     <string name="health_visualiser">Health Visualiser</string>
+    <string name="set_a_reminder">Set a Reminder</string>
 </resources>

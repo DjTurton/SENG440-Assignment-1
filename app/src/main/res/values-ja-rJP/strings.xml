@@ -13,4 +13,5 @@
     <string name="view_results">"結果を見る "</string>
     <string name="graph_results">"結果をグラフ化する "</string>
     <string name="health_visualiser">"ヘルスビジュアライザー "</string>
+    <string name="set_a_reminder">"リマインダーを設定する "</string>
 </resources>
